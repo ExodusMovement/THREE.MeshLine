@@ -1,8 +1,8 @@
-import { Matrix4 } from 'three/src/math/Matrix4'
-import { Ray } from 'three/src/math/Ray'
-import { Sphere } from 'three/src/math/Sphere'
-import { Vector3 } from 'three/src/math/Vector3'
-import { LineSegments } from 'three/src/objects/LineSegments'
+import { Matrix4 } from '@exodus/three/src/math/Matrix4'
+import { Ray } from '@exodus/three/src/math/Ray'
+import { Sphere } from '@exodus/three/src/math/Sphere'
+import { Vector3 } from '@exodus/three/src/math/Vector3'
+import { LineSegments } from '@exodus/three/src/objects/LineSegments'
 
 function MeshLineRaycast (raycaster, intersects) {
   let inverseMatrix = new Matrix4()

@@ -1,15 +1,15 @@
-import { BufferGeometry } from 'three/src/core/BufferGeometry'
-import { BufferAttribute } from 'three/src/core/BufferAttribute'
-import { Vector3 } from 'three/src/math/Vector3'
-import { ShaderChunk } from 'three/src/renderers/shaders/ShaderChunk'
-import { ShaderMaterial } from 'three/src/materials/ShaderMaterial'
-import { UniformsLib } from 'three/src/renderers/shaders/UniformsLib'
-import { Geometry } from 'three/src/core/Geometry'
-import { Color } from 'three/src/math/Color'
-import { Vector2 } from 'three/src/math/Vector2'
+import { BufferGeometry } from '@exodus/three/src/core/BufferGeometry'
+import { BufferAttribute } from '@exodus/three/src/core/BufferAttribute'
+import { Vector3 } from '@exodus/three/src/math/Vector3'
+import { ShaderChunk } from '@exodus/three/src/renderers/shaders/ShaderChunk'
+import { ShaderMaterial } from '@exodus/three/src/materials/ShaderMaterial'
+import { UniformsLib } from '@exodus/three/src/renderers/shaders/UniformsLib'
+import { Geometry } from '@exodus/three/src/core/Geometry'
+import { Color } from '@exodus/three/src/math/Color'
+import { Vector2 } from '@exodus/three/src/math/Vector2'
 
 // raycast
-// import { Matrix4 } from 'three/src/math/Matrix4'
+// import { Matrix4 } from '@exodus/three/src/math/Matrix4'
 // import MeshLineRaycast from './mesh-line-raycast'
 
 function MeshLine () {
