@@ -322,9 +322,9 @@ ShaderChunk['meshline_vert'] = `
 #version 300 es
 #define attribute in
 #define varying out
-precision highp float;
-precision highp int;
-#define HIGH_PRECISION
+precision mediump float;
+precision mediump int;
+#define MEDIUM_PRECISION
 #define SHADER_NAME MeshLineMaterial
 #define VERTEX_TEXTURES
 #define GAMMA_FACTOR 2
@@ -415,10 +415,10 @@ void main() {
 ShaderChunk['meshline_frag'] = `
 #version 300 es
 #define varying in
-out highp vec4 pc_fragColor;
-precision highp float;
-precision highp int;
-#define HIGH_PRECISION
+out mediump vec4 pc_fragColor;
+precision mediump float;
+precision mediump int;
+#define MEDIUM_PRECISION
 #define SHADER_NAME MeshLineMaterial
 #define GAMMA_FACTOR 2
 uniform mat4 viewMatrix;
@@ -474,6 +474,8 @@ function MeshLineMaterial (parameters) {
       alphaTest: { value: 0 },
       repeat: { value: new Vector2(1, 1) },
     }),
+
+    precision: 'mediump',
     
     vertexShader: ShaderChunk.meshline_vert,
     
